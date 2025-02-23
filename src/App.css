@@ -1,0 +1,280 @@
+.hidden{
+  display: none;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  max-width: 1108px;
+  margin: auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar{
+  display: flex;
+}
+.nav-items, .cart-section{
+  display: flex;
+  gap: 1.5rem;
+  height: 112px;
+  align-items: center;
+}
+.nav-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4.5rem;
+  cursor: pointer;
+}
+.nav-item::after {
+  position: absolute;
+  bottom: -2.75rem;
+  content: "";
+  width: 0; 
+  border-bottom: 3px solid #FF7D1B;
+  transition: width 0.3s ease-in-out; 
+}
+
+.nav-item:hover::after {
+  width: 4.5rem; 
+}
+
+.logo-item{
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.cart-box, .profile-box{
+  cursor: pointer;
+  position: relative;
+}
+
+.badge-cart{
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #FF7D1B;
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 0px 8px;
+  font-size: 0.6rem;
+  height: fit-content;
+}
+
+.profile-box{
+  border: 3px solid transparent;
+  border-radius: 50%;
+  height: 54px;
+  height: 54px;
+  transition: border 0.4s ease;
+}
+
+.profile-box:hover{
+  border: 3px solid #FF7D1B;
+  border-radius: 50%;
+}
+
+
+/* Drop down */
+.cart-section{
+  position: relative;
+}
+.drop-down-cart{
+  position: absolute;
+  width: 22.5rem;
+  height: 15.75rem;
+  background-color: #FFF;
+  filter: drop-shadow(0px 15px 8px #1b202636);
+
+  top: 7rem;
+  right: -4rem;
+  border-radius: 12px;
+}
+
+.drop-down-title{
+  margin: 1.2rem 1.4rem;
+}
+hr{
+  border-top: 2px solid #929395;
+  opacity: 0.2;
+  /* border-color: #929395; */
+}
+.basket-section{
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.basket-product{
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.product-thumbnail{
+  border-radius: 8px;
+}
+.product-name{
+  font-size: 1rem;
+  color: #929395;
+  font-weight: 400;
+}
+.basket-product-price{
+  color: #929395;
+  font-weight: 400;
+}
+
+.basket-product-price b {
+  color: #1B2026;
+}
+
+.product-delete-btn{
+  padding: 0rem;
+}
+
+.empty-basket{
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-text{
+  font-weight: 700;
+  color: #929395;
+}
+
+/* Main Section */
+main{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 42px 48px;
+}
+
+/* Main Images Section */
+
+.product-thumb-container{
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 445px;
+}
+
+.product-image-thumbnail, .product-image{
+  border-radius: 12px;
+}
+
+.product-image-thumbnail{
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.product-image-thumbnail:hover{
+  opacity: 0.7;
+}
+.product-selected{
+  opacity: 0.4;
+}
+.border-thumb{
+  border: 3px solid transparent;
+  height: 88px;
+  border-radius: 1rem;
+}
+.border-thumb-active{
+  border: 3px solid #FF7D1B;
+  height: 88px;
+  border-radius: 1rem;
+}
+
+/* Main Call to action Section */
+
+.product-title{
+  font-size: 2.75rem;
+  color: #1B2026;
+  margin-top: 20px;
+}
+.product-subtitle{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #69707D;
+  margin-top: 3rem;
+}
+.product-description{
+  color: #69707D;
+  margin-top: 2rem;
+}
+.dashed-price{
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #69707D;
+}
+
+.product-price-box{
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-price{
+  font-size: 1.6rem;
+  padding: 0;
+}
+.product-badge{
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #1B2026;
+  border-radius: 8px;
+}
+/* Button */
+.add-to-cart-section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #1B2026;
+  width: 100%;
+
+  height: 3rem;
+}
+.counter-items{
+  gap: 2rem;
+  background-color: #F7F8FD;
+  border-radius: 8px;
+}
+
+.primary-btn{
+  gap: 1rem;
+  background-color: #FF7D1B;
+  transition: background-color 0.4s ease;
+}
+.primary-btn:hover{
+  background-color: #FFAC6A;
+}
+
+.counter {
+  transition: filter 0.4s ease; 
+}
+
+.light-btn:hover .counter {
+  filter: brightness(1.6); 
+}
+
+.count-number{
+  text-align: center;
+  width: 2rem;
+}
