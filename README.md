@@ -2,7 +2,7 @@
 
 This project is an implementation of an e-commerce product page, built as a challenge from Frontend Mentor. The main goal was to practice state management using Redux Toolkit while ensuring the UI closely matches the given design.
 
-##🚀 Features
+## 🚀 Features
 
 📸 Lightbox Gallery: Users can open a lightbox gallery by clicking on the large product image.
 
@@ -14,7 +14,7 @@ This project is an implementation of an e-commerce product page, built as a chal
 
 🎨 Interactive UI: Hover states for interactive elements enhance usability.
 
-##🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 React.js - Component-based UI development
 
@@ -22,6 +22,6 @@ Redux Toolkit - State management for cart and UI interactions
 
 CSS - Styling for responsiveness and design accuracy
 
-##📸 Screenshots
+## 📸 Screenshots
 
 ![Product Page Screenshot](./public/final-result.png)
